@@ -8,9 +8,6 @@ project_status.md
 # Data (too large for git)
 data/
 
-# Generated outputs
-Milestone_1/gallery/
-
 # Python / Jupyter artifacts
 __pycache__/
 *.pyc
