@@ -1,0 +1,22 @@
+# Local reports (submitted via Canvas, not in repo)
+Milestone_1/dataset_memo.md
+Milestone_1/proposal.md
+
+# Project tracking (local only)
+project_status.md
+
+# Data (too large for git)
+data/
+
+# Generated outputs
+Milestone_1/gallery/
+
+# Python / Jupyter artifacts
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Model checkpoints
+checkpoints/
+*.pt
+*.bin
