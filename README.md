@@ -18,7 +18,7 @@ A text-to-image generative model combining a CLIP text encoder with a conditiona
 
 `Milestone_1/DavidFung_Project2.Milestone1.ipynb` is a single, self-contained notebook with three tasks:
 
-1. **Task 1 — Dataset curation**: loads Flickr30k (`umaru97/flickr30k_train_val_test`) from Hugging Face, cleans captions, filters by length (8–200 words), deduplicates, caps at 3,500 pairs, resizes to 512×512, and writes `data/curated/` + `manifest.csv`.
+1. **Task 1 — Dataset curation**: loads Flickr30k (`umaru97/flickr30k_train_val_test`) from Hugging Face, cleans captions, filters by length (8–200 words), deduplicates, caps at 5,000 pairs, resizes to 512×512, and writes `data/curated/` + `manifest.csv`.
 2. **Task 2 — CLIP embedding pipeline**: loads CLIP ViT-B/32, tokenizes a 75-pair sample, computes text & image embeddings (512-dim), reports cosine alignment, and projects the joint space with PCA.
 3. **Task 3 — Baseline generation**: generates 16 prompt→image samples from Stable Diffusion v1-5 (512×512, guidance 10.0, 50 steps, seed 42 + index), compares each to its ground-truth Flickr image, and saves a side-by-side gallery.
 
@@ -28,22 +28,15 @@ Supporting documents: `Milestone_1/dataset_memo.md` (dataset memo) and `Mileston
 
 ```
 Project_2/
-├── brief.md                        # Project brief (read-only)
 ├── README.md
-├── project_status.md               # Local tracking (gitignored)
 ├── .gitignore
 ├── Milestone_1/
 │   ├── DavidFung_Project2.Milestone1.ipynb
-│   ├── dataset_memo.md             # (gitignored — submitted via Canvas)
-│   ├── proposal.md                 # (gitignored — submitted via Canvas)
 │   ├── pca.png                     # CLIP joint-space PCA plot
-│   └── gallery/                    # (gitignored) baseline + comparison images
+│   └── gallery/                    # baseline + comparison images
 ├── Milestone_2/
 ├── Milestone_3/
 ├── Milestone_4/
-└── data/                           # (gitignored — too large for git)
-    ├── curated/                    # 3,500 resized (512×512) images + manifest.csv
-    └── raw_flickr30k/              # Hugging Face raw dataset cache
 ```
 
 ## Environment
