@@ -9,6 +9,11 @@ Milestone_4/
 # Abandoned SD1.5-finetune archive (kept local)
 Milestone_2_old/
 
+# Milestone 2 resolution sensitivity runs + superseded archive (kept local, not in submission)
+Milestone_2_128x128SA/
+Milestone_2_256x256SA/
+Milestone_2/_old/
+
 # Project tracking (local only)
 project_status.md
 
@@ -27,3 +32,7 @@ checkpoints/
 
 # CLIP token tensors (too large for git)
 Milestone_2_128x128SA/outputs/clip_text_tokens*.npy
+
+# Local checkpoint A/B test script + its outputs (not a deliverable)
+Milestone_2/model_test.py
+Milestone_2/model_test_output/

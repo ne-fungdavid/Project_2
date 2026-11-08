@@ -1,56 +1,56 @@
 {
   "summary": {
     "model": "TextConditionedUNet 34.34M params (EMA weights)",
-    "checkpoint": "/home/davidfung/jupyterlab/project_2/Milestone_2/outputs/ddpm_best_val_l14_1000ep.pt",
+    "checkpoint": "/home/davidfung/jupyterlab/project_2/Milestone_2/outputs/ddpm_text_conditional_l14_1000ep.pt",
     "best_val_loss": 0.04175,
     "resolution": "64x64",
     "device": "cuda",
     "n_baseline_prompts": 16,
-    "baseline_mean_s_per_img": 0.48,
+    "baseline_mean_s_per_img": 0.47,
     "guidance_metrics": [
       {
         "guidance": 1.0,
-        "mean_clip_align": 0.1361,
-        "diversity": 0.5396,
+        "mean_clip_align": 0.1258,
+        "diversity": 0.6117,
         "time_s_per_img": 0.47
       },
       {
         "guidance": 3.0,
-        "mean_clip_align": 0.1327,
-        "diversity": 0.6147,
+        "mean_clip_align": 0.1858,
+        "diversity": 0.6305,
         "time_s_per_img": 0.47
       },
       {
         "guidance": 7.5,
-        "mean_clip_align": 0.1641,
-        "diversity": 0.6182,
-        "time_s_per_img": 0.47
+        "mean_clip_align": 0.1827,
+        "diversity": 0.6666,
+        "time_s_per_img": 0.46
       },
       {
         "guidance": 10.0,
-        "mean_clip_align": 0.1732,
-        "diversity": 0.6006,
+        "mean_clip_align": 0.168,
+        "diversity": 0.7266,
         "time_s_per_img": 0.47
       },
       {
         "guidance": 15.0,
-        "mean_clip_align": 0.1731,
-        "diversity": 0.6245,
-        "time_s_per_img": 0.47
+        "mean_clip_align": 0.1682,
+        "diversity": 0.566,
+        "time_s_per_img": 0.46
       }
     ],
     "steps_time_s_per_img": {
-      "25": 0.23,
+      "25": 0.24,
       "50": 0.46,
       "100": 0.93
     },
     "schedule_time_s_per_img": {
       "linear": 0.47,
-      "cosine": 0.46
+      "cosine": 0.47
     },
     "sampler_time_s_per_img": {
       "ddim": 0.47,
-      "ddpm": 9.3
+      "ddpm": 9.33
     }
   },
   "generations": [
@@ -64,7 +64,7 @@
       "steps": 50,
       "schedule": "cosine",
       "sampler": "ddim",
-      "time_s": 0.62,
+      "time_s": 0.61,
       "file": "base_00.png"
     },
     {
@@ -90,7 +90,7 @@
       "steps": 50,
       "schedule": "cosine",
       "sampler": "ddim",
-      "time_s": 0.47,
+      "time_s": 0.46,
       "file": "base_02.png"
     },
     {
@@ -103,7 +103,7 @@
       "steps": 50,
       "schedule": "cosine",
       "sampler": "ddim",
-      "time_s": 0.46,
+      "time_s": 0.47,
       "file": "base_03.png"
     },
     {
@@ -116,7 +116,7 @@
       "steps": 50,
       "schedule": "cosine",
       "sampler": "ddim",
-      "time_s": 0.47,
+      "time_s": 0.46,
       "file": "base_04.png"
     },
     {
@@ -129,7 +129,7 @@
       "steps": 50,
       "schedule": "cosine",
       "sampler": "ddim",
-      "time_s": 0.46,
+      "time_s": 0.47,
       "file": "base_05.png"
     },
     {
@@ -295,7 +295,7 @@
       "steps": 50,
       "schedule": "cosine",
       "sampler": "ddim",
-      "time_s": 0.47,
+      "time_s": 0.46,
       "file": "guidance/g1/p02.png"
     },
     {
@@ -307,7 +307,7 @@
       "steps": 50,
       "schedule": "cosine",
       "sampler": "ddim",
-      "time_s": 0.46,
+      "time_s": 0.47,
       "file": "guidance/g3/p00.png"
     },
     {
@@ -319,7 +319,7 @@
       "steps": 50,
       "schedule": "cosine",
       "sampler": "ddim",
-      "time_s": 0.47,
+      "time_s": 0.46,
       "file": "guidance/g3/p01.png"
     },
     {
@@ -331,7 +331,7 @@
       "steps": 50,
       "schedule": "cosine",
       "sampler": "ddim",
-      "time_s": 0.46,
+      "time_s": 0.47,
       "file": "guidance/g3/p02.png"
     },
     {
@@ -367,7 +367,7 @@
       "steps": 50,
       "schedule": "cosine",
       "sampler": "ddim",
-      "time_s": 0.47,
+      "time_s": 0.46,
       "file": "guidance/g7.5/p02.png"
     },
     {
@@ -415,7 +415,7 @@
       "steps": 50,
       "schedule": "cosine",
       "sampler": "ddim",
-      "time_s": 0.47,
+      "time_s": 0.46,
       "file": "guidance/g15/p00.png"
     },
     {
@@ -463,7 +463,7 @@
       "steps": 25,
       "schedule": "cosine",
       "sampler": "ddim",
-      "time_s": 0.24,
+      "time_s": 0.23,
       "file": "sampling/steps_25/p01.png"
     },
     {
@@ -475,7 +475,7 @@
       "steps": 25,
       "schedule": "cosine",
       "sampler": "ddim",
-      "time_s": 0.23,
+      "time_s": 0.24,
       "file": "sampling/steps_25/p02.png"
     },
     {
@@ -571,7 +571,7 @@
       "steps": 50,
       "schedule": "linear",
       "sampler": "ddim",
-      "time_s": 0.46,
+      "time_s": 0.47,
       "file": "sampling/sched_linear/p01.png"
     },
     {
@@ -583,7 +583,7 @@
       "steps": 50,
       "schedule": "linear",
       "sampler": "ddim",
-      "time_s": 0.47,
+      "time_s": 0.46,
       "file": "sampling/sched_linear/p02.png"
     },
     {
@@ -595,7 +595,7 @@
       "steps": 50,
       "schedule": "cosine",
       "sampler": "ddim",
-      "time_s": 0.46,
+      "time_s": 0.47,
       "file": "sampling/sched_cosine/p00.png"
     },
     {
@@ -607,7 +607,7 @@
       "steps": 50,
       "schedule": "cosine",
       "sampler": "ddim",
-      "time_s": 0.47,
+      "time_s": 0.46,
       "file": "sampling/sched_cosine/p01.png"
     },
     {
@@ -619,7 +619,7 @@
       "steps": 50,
       "schedule": "cosine",
       "sampler": "ddim",
-      "time_s": 0.46,
+      "time_s": 0.47,
       "file": "sampling/sched_cosine/p02.png"
     },
     {
@@ -643,7 +643,7 @@
       "steps": 50,
       "schedule": "cosine",
       "sampler": "ddim",
-      "time_s": 0.46,
+      "time_s": 0.47,
       "file": "sampling/sampler_ddim/p01.png"
     },
     {
@@ -655,7 +655,7 @@
       "steps": 50,
       "schedule": "cosine",
       "sampler": "ddim",
-      "time_s": 0.47,
+      "time_s": 0.46,
       "file": "sampling/sampler_ddim/p02.png"
     },
     {
@@ -667,7 +667,7 @@
       "steps": 1000,
       "schedule": "cosine",
       "sampler": "ddpm",
-      "time_s": 9.29,
+      "time_s": 9.36,
       "file": "sampling/sampler_ddpm/p00.png"
     },
     {
@@ -691,7 +691,7 @@
       "steps": 1000,
       "schedule": "cosine",
       "sampler": "ddpm",
-      "time_s": 9.3,
+      "time_s": 9.32,
       "file": "sampling/sampler_ddpm/p02.png"
     }
   ]
