@@ -30,7 +30,6 @@ Trains a from-scratch text-conditional DDPM (U-Net + cosine schedule + classifie
 
 - `Milestone_2/Integration_Training.ipynb` — end-to-end training (best val 0.0417 over 1000 epochs; loss curve + training-progress GIF in `outputs/` / `gallery/`).
 - `Milestone_2/Conditional_Generation.ipynb` — 16-prompt baseline gallery with ground-truth comparisons, plus guidance / steps / schedule / sampler sweeps.
-- `Milestone_2_128x128SA/`, `Milestone_2_256x256SA/` — resolution sensitivity runs + memos.
 
 ## Milestone 3 (In progress)
 
@@ -52,8 +51,6 @@ Project_2/
 │   └── curated/                    # 5000 image + caption pairs (M1)
 ├── Milestone_1/                    # M1 notebook + baseline SD gallery
 ├── Milestone_2/                    # M2 notebooks, outputs, gallery, memos
-├── Milestone_2_128x128SA/         # 128x128 resolution sensitivity run + memo
-├── Milestone_2_256x256SA/         # 256x256 resolution sensitivity run + memo
 ├── Milestone_3/                    # Evaluation.ipynb — FID/IS, alignment, sensitivity, SD comparison
 ├── Milestone_4/                    # Demo.ipynb — live prompt-to-image demo + labeled gallery
 ```
